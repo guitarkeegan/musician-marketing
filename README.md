@@ -10,7 +10,7 @@
 
   ## Description
  
-  A full stack application build with NextJS, that displays upcomeing concert dates, music releases, video content, and a store.
+  A full stack application build with NextJS, that displays upcoming concert dates, music releases, video content, and a store.
 
   ## Installation
 

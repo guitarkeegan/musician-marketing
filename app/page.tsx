@@ -3,10 +3,12 @@ import { Inter } from "next/font/google";
 import aikoProfile from "@/assets/images/aiko-headshot-wall-full-fade-black-fs8.png";
 import HomeTitle from "@/components/HomeTitle";
 import SocialLinks from "@/components/SocialLinks";
+import TourDates from "@/components/TourDates";
+import Carousel from "@/components/Carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <div className="flex justify-end">
@@ -15,6 +17,9 @@ export default function Home() {
       </div>
       <HomeTitle />
       <SocialLinks />
+      {/* @ts-expect-error Server Component */}
+      <TourDates />
+      <Carousel media={"video"} />
     </main>
   );
 }

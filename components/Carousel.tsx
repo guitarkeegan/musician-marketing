@@ -9,7 +9,8 @@ const moveRightStyle = {
 }
 
 const moveLeftStyle = {
-    transform: "translateX(-200%)"
+    transform: "translateX(-200%)",
+    
 }
 
 const initialStyle = {

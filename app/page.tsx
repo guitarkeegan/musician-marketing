@@ -4,7 +4,8 @@ import aikoProfile from "@/assets/images/aiko-headshot-wall-full-fade-black-fs8.
 import HomeTitle from "@/components/HomeTitle";
 import SocialLinks from "@/components/SocialLinks";
 import TourDates from "@/components/TourDates";
-import Carousel from "@/components/Carousel";
+// import Carousel from "@/components/Carousel";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,8 @@ export default async function Home() {
       <SocialLinks />
       {/* @ts-expect-error Server Component */}
       <TourDates />
-      <Carousel media={"video"} />
+      
+      {/* <Carousel media={"video"} /> */}
     </main>
   );
 }

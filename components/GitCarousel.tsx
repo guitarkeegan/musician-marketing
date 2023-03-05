@@ -33,7 +33,7 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <div className="relative md:w-3/5">
+    <div className="relative md:w-1/2 mt-[162px]">
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20 hover:text-white"
@@ -52,7 +52,7 @@ export default function Carousel({ images }: CarouselProps) {
                   src={image.src}
                   alt={image.alt}
                   fill
-                  className="animate-fadeIn"
+                //   className="animate-fadeIn"
                   style={{objectFit: "contain"}}
                 />
               );

@@ -6,7 +6,8 @@
   - [Contributions](#contributions)
   - [Tests](#tests)
   - [Questions](#questions)
-  - [License?](#license)
+  - [License](#license)
+  - [Demo](#demo)
 
   ## Description
  
@@ -36,5 +37,8 @@
 
   ## License
   This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) - click the link to read the license.
+
+  ## Demo
+  Project is currently deployed to vercel at https://musician-marketing.vercel.app/
+
   
- 

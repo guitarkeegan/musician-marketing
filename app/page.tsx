@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import aikoProfile from "@/assets/images/aiko-headshot-wall-full-fade-black-fs8.png";
+import aikoProfile from "@/assets/images/aiko-headshot-wall-full-fs8.png";
 import HomeTitle from "@/components/HomeTitle";
 import SocialLinks from "@/components/SocialLinks";
 import TourDates from "@/components/TourDates";
 import Carousel from "@/components/GitCarousel";
 import SignUpForm from "@/components/SignUpForm";
+import Footer from "@/components/Footer";
 
 const videoImages = [
   {
@@ -27,12 +28,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default async function Home() {
   return (
     <main>
-      <div className="flex justify-end">
+      <div className="flex mt-12 lg:mt-0 lg:justify-end justify-center">
         <Image
           src={aikoProfile}
           alt="Headshot of Aiko Sakazaki"
           priority
-          className="fixed bg-cover w-2/5 filter grayscale hover:filter-none transition ease-in-out duration-1000 top-0"
+          className="relative min-w-[250px] lg:fixed bg-cover w-2/5 lg:filter lg:grayscale hover:filter-none transition ease-in-out duration-1000 top-0"
         />
       </div>
       <HomeTitle />
@@ -41,6 +42,7 @@ export default async function Home() {
       <TourDates />
       <Carousel images={videoImages} />
       <SignUpForm />
+      <Footer />
     </main>
   );
 }

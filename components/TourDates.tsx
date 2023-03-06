@@ -25,7 +25,7 @@ export default async function TourDates() {
   const { tourDates } = await getData();
 
   return (
-    <div className="flex ml-12 flex-col gap-6 mt-24">
+    <div className="flex sm:ml-12 flex-col gap-6 mt-12 lg:mt-24 z-10">
       {tourDates.map((date, i) => (
         <div className="flex text-white md:max-width-1/2 font-thin" key={i}>
           <div className="w-[150px]">
@@ -35,7 +35,7 @@ export default async function TourDates() {
               day: "numeric",
             }).toUpperCase()}
           </div>
-          <div className="w-[400px]">
+          <div className="sm:w-[400px]">
             <h3>{date.venue.toUpperCase()}</h3>
             <h3>{`${date.city.toUpperCase()}, ${date.country.toUpperCase()}`}</h3>
           </div>

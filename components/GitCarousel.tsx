@@ -6,10 +6,10 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 
 type CarouselProps = {
-    images: [{
+    images: {
         src: string,
         alt: string,
-    }]
+    }[]
 }
 
 /**
@@ -33,7 +33,7 @@ export default function Carousel({ images }: CarouselProps) {
   };
 
   return (
-    <div className="relative md:w-1/2 mt-[162px]">
+    <div className="relative md:w-1/2 mt-12 lg:mt-[162px]">
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20 hover:text-white"
@@ -52,6 +52,7 @@ export default function Carousel({ images }: CarouselProps) {
                   src={image.src}
                   alt={image.alt}
                   fill
+                  sizes={"(max-width: 768px) 100vw, (max-width: 1200px) 720px"}
                 //   className="animate-fadeIn"
                   style={{objectFit: "contain"}}
                 />

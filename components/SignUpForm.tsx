@@ -8,7 +8,7 @@ export default function SignUpForm() {
   const [responseMessage, setResponseMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("")
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log(email);
 
@@ -44,7 +44,7 @@ export default function SignUpForm() {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
 

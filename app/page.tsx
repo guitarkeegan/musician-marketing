@@ -33,7 +33,7 @@ export default async function Home() {
           src={aikoProfile}
           alt="Headshot of Aiko Sakazaki"
           priority
-          className="relative min-w-[250px] lg:fixed bg-cover w-2/5 lg:filter lg:grayscale hover:filter-none transition ease-in-out duration-1000 top-0"
+          className="relative min-w-[250px] lg:brightness-50 lg:-z-10 lg:fixed bg-cover w-2/5 lg:filter lg:grayscale hover:filter-none transition ease-in-out duration-1000 top-0"
         />
       </div>
       <HomeTitle />
